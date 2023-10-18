@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="Pt_Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inscrição formulário</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <main>
+        <form onsubmit="handlSubmit(event)">
+           
+            <h1>Formulário</h1>
+            <br>
+            <label for="">Nome</label>
+            <input type="text" name="Nome" id="name">
+            <br>
+            <labe for="">CPF</labe>
+            <input type="text" name="CPF" id="cpf">
+            <br>
+            <label for="">email</label>
+            <input type="email" name="email" id="email">
+            <br>
+            <label for="">Senha</label>
+            <input type="password" name="Senha" id="senha">
+            <button type="submit"> Enviar</button>
+
+        </form>
+    </main>
+</body>
+<script>
+
+    function handlSubmit(){
+        event.preventDefault()
+        const name = document.getElementById('name').value
+        const cpf = document.getElementById('cpf').value
+        const email = document.getElementById('email').value
+        const senha = document.getElementById('senha').value
+
+        const data = {name,cpf,email,senha}
+        console.log(name)
+        console.log(cpf)
+        console.log(email)
+        console.log(senha)
+
+    }
+    const button = document.querySelector('button')
+    button.addEventListener('click', function(){
+        alert('Formulário enviado')
+    })
+    
+</script>
+</html>
