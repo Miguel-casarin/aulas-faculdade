@@ -1,0 +1,73 @@
+função criar lista (numero_total_listas)
+	if (numero_total_listas !0)
+		criar uma lista
+
+imput primeiro número = número inteiro possitivo 
+imput segundo número = número inteiro possitivo
+
+if númro 1 > número 2
+	inserir numero 1 lista_maior_número[]
+	inserir numero 2 lista_menor_número[]
+	
+	else
+		inserir numero 2 lista_maior_número[]
+		inserir numero  lista_menor_número[]
+
+numero lista somas = size(lista_maior_número)
+numero_total_listas = size(lista_maior_número)
+
+while (numero somas !0)
+	
+	criar lista()
+
+	for lista_menor_número [ultimo elemento = i downt to primeiro elemento]
+		for lista_maior_número_número [ultimo elemento = i downt to primeiro elemento]
+			valor = lista_menor_número[i] * lista_maior_número[j]
+			valor insere lista_soma_1[size(lista_maior_número)]
+			numero_total_listas --
+			lista sommas --
+
+	if (lista_soma_1 = cheia)
+		
+		criar lista()
+		
+		lista_soma_2 insere 0 [size + 1]      // a ideia e inserir um zero ao final da lista 
+		
+		for lista_menor_número [ultimo elemento = i downt to primeiro elemento]
+			for lista_maior_número_número [ultimo elemento = i downt to primeiro elemento]
+				valor = lista_menor_número[i] * lista_maior_número[j]
+				valor insere lista_soma_2[size(lista_maior_número)]
+			
+				lista sommas --
+				numero_total_listas --
+	
+	if (lista_soma_n = cheia)
+		
+		criar lista()
+		
+		lista_soma_n+1 insere 0 [size + 1]      // a ideia e inserir um zero ao final da lista 
+		
+		for lista_menor_número [ultimo elemento = i downt to primeiro elemento]
+			for lista_maior_número_número [ultimo elemento = i downt to primeiro elemento]
+				valor = lista_menor_número[i] * lista_maior_número[j]
+				valor insere lista_soma_n +1[size(lista_maior_número)]
+			
+				lista sommas --
+				numero_total_listas --
+
+for lista_soma_1 [ultimo elemento = i downt to primeiro elemento]
+	for lista_soma_2 [ultimo elemento = i downt to primeiro elemento]
+		for lista_soma_n [ultimo elemento = i downt to primeiro elemento]
+			for lista_soma_n + 1 [ultimo elemento = i downt to primeiro elemento]
+			
+				numero soma = lista_soma_1[i] + lista_soma_2[i] + lista_soma_n[i] + lista_soma_n + 1[i]
+				numero soma insere lista_resultado[]
+
+if (lista_resultado(size) = 2 * lista_maior_número(size) + 1) // o resultado de uma multiplicação em geral tem o dobro de caracteres do maior número + 1 
+	print(lista resultado)
+		
+	
+	
+		
+		
+	

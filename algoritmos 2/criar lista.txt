@@ -1,0 +1,29 @@
+#include <iostream>
+#include <list>
+
+// Função para criar listas baseadas no inteiro passado como parâmetro
+list<int>* criarListas(int numeroDeListas) {
+    list<int>* listas = new list<int>[numeroDeListas]; // Aloca um array de listas
+
+    // Retorna o ponteiro para o array de listas criado
+    return listas;
+}
+
+int main() {
+    int num = 5; // Número de listas desejadas
+    list<int>* listas = criarListas(num); // Chama a função para criar as listas
+
+    // Exemplo de como você pode usar as listas criadas
+    for (int i = 0; i < num; ++i) {
+        cout << "Lista " << i+1 << ":" << endl;
+        for (int elemento : listas[i]) {
+            cout << elemento << " ";
+        }
+        cout << endl;
+    }
+
+    // Não se esqueça de liberar a memória alocada
+    delete[] listas;
+
+    return 0;
+}
