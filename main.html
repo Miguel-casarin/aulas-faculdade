@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Site</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="banner">
+            <h1>Bem-vindo ao Meu Site</h1>
+        </div>
+        <nav class="opcoes">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="home">
+            <h2>Home</h2>
+            <p>Conteúdo da página inicial.</p>
+        </section>
+
+        <section id="sobre">
+            <h2>Sobre</h2>
+            <p>Informações sobre nós.</p>
+        </section>
+
+        <section id="servicos">
+            <h2>Serviços</h2>
+            <p>Detalhes dos nossos serviços.</p>
+        </section>
+
+        <section id="contato">
+            <h2>Contato</h2>
+            <p>Informações para contato.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Meu Site. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #007BFF;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.banner h1 {
+    margin-bottom: 10px;
+}
+
+nav.opcoes ul {
+    list-style: none;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    background-color: #0056b3;
+}
+
+nav.opcoes ul li {
+    margin: 0 15px;
+}
+
+nav.opcoes ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav.opcoes ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+}
+
+main section {
+    margin-bottom: 20px;
+}
+
+footer {
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 10px 0;
+    margin-top: 20px;
+}
